@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arealpro</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        #video {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter a Number</h1>
+        <input type="text" id="numberInput" placeholder="Enter a number">
+        <button onclick="playRickroll()">Submit</button>
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RvBwypGUkPo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function playRickroll() {
+            var input = document.getElementById('numberInput').value;
+            var video = document.getElementById('video');
+            if (input) {
+                video.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
